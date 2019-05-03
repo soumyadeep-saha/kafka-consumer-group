@@ -1,0 +1,12 @@
+consumer group - ppt
+create the topic
+.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 3 --topic consumer-group
+describe thge topic
+.\bin\windows\kafka-topics.bat --describe --zookeeper localhost:2181
+
+code:
+Run consumer-consumergroup-producer
+run consumer-consumergroup1
+run consumer-consumergroup2
+run consumer-consumergroup3
+stop the application from 3 to 1 and see trhe partition changes
